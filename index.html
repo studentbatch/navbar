@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+
+
+        }
+
+        .container {
+            width: 400px;
+            height: 100vh;
+            background-color: cadetblue;
+            border-radius: 15px;
+            position: absolute;
+            top: 0;
+            left: -300px;
+            transition: 0.5s ease;
+        }
+
+        button {
+            position: absolute;
+            top: 50px;
+            left: 90%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container"> 
+    </div>
+    <button onclick="toggle()">bar</button>
+
+
+
+    <script>
+        function toggle() {
+            let get_container = document.querySelector(".container");
+            if (get_container.style.left === "0") {
+                get_container.style.left = "-400px";
+            }
+            else {
+                get_container.style.left = "-400px";                   
+
+            }
+        }
+    </script>
+
+</body>
+
+</html>
